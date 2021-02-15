@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        thead {
+            font-size: bold;
+            background-color: indigo;
+            color: white;
+             }
+        td {
+            padding: 10px;
+            border: solid 1px black;
+             }
+             caption {
+            font-weight: lighter;
+            font-style: italic;
+            }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>La listes des spécialités culinaire par ville</caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th colspan="2">Spécialités</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Toulouse</td>
+                <td>Cassoulet</td>
+                <td>Jambon cru</td>
+            </tr>
+            <tr>
+                <td>Strasbourg</td>
+                <td colspan="2">Choucroute</td>
+                
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>Café à 10€</td>
+                <td>Jambon beurre à 20€</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <hr>
+    <table>
+
+        <caption>Les spécialités culinairepar ville</caption>
+        <thead>
+            <tr>
+                <th>ville</th>
+                <th>specialite</th>
+                <th>ingredient principal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Toulouse</td>
+                <td>Cassoulet</td>
+                <td>Flageolet</td>
+            </tr>
+            <tr>
+                <td>Jambon</td>
+                <td>Couchon</td>
+                
+            </tr>
+            <tr>
+                <td>Strasbourg</td>
+                <td>Choucroute</td>
+                <td>Chou</td>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>Café à 10€</td>
+                <td>Mauvaise humeur du serveur</td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
